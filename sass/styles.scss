@@ -17,6 +17,10 @@ $global-padding: 10px;
 }
 
 // Mixins
+@mixin block_font($block_font_size: 25px, $block_font_color: $dark){
+  font-size: $block_font_size;
+  color: $block_font_color;
+}
 
 // Styles
 body{
