@@ -1,6 +1,12 @@
 // Resets, Clearfix, etc
+@import "./partials/reset";
+@import "./partials/clearfix";
 
 // Variables
+$dark-color: black;
+$light-color: green;
+$bright-color: white;
+$global-padding: 10px;
 
 // Media Query Ranges
 
@@ -36,6 +42,3 @@ h2{
   margin-bottom: 20px;
   padding: 20px;
 }
-
-@import "./partials/reset";
-@import "./partials/clearfix";
