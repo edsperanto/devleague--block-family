@@ -21,19 +21,33 @@ $global-padding: 10px;
   }
   h1 {
     color: $light-color !important;
-    font-size: 43px !important;
-    padding: 15px !important;
+    font-size: 2.5em !important;
+    padding: 0.4em !important;
   }
   h2 {
     @include block_font(1.7em, $bright-color);
   }
   .block_family li{
     background-color: $light-color !important;
-    padding: 14px !important;
+    padding: 0.9em !important;
   }
 }
 @media screen and (min-width: 900px) {
-
+  body{
+    background-color: $dark-color !important;
+  }
+  h1 {
+    color: $bright-color !important;
+    font-size: 3.3em !important;
+    padding: 0.5em !important;
+  }
+  h2 {
+    @include block_font(2.3em, $dark-color);
+  }
+  .block_family li{
+    background-color: $bright-color !important;
+    padding: 1.2em !important;
+  }
 }
 
 // Styles
