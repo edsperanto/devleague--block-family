@@ -21,15 +21,22 @@ $global-padding: 10px;
   }
   h1 {
     color: $light-color !important;
-    font-size: 2.5em !important;
+    font-size: 3.4em !important;
     padding: 0.4em !important;
   }
   h2 {
-    @include block_font(1.7em, $bright-color);
+    @include block_font(2.1em, $bright-color);
+  }
+  .block_family {
+    max-width: 700px !important;
   }
   .block_family li{
     background-color: $light-color !important;
-    padding: 0.9em !important;
+    padding: 1.3em !important;
+    width: 12.6em !important;
+    display: inline-block !important;
+    margin-bottom: 5px !important;
+    margin-right: 1px !important;
   }
 }
 @media screen and (min-width: 900px) {
