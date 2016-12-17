@@ -4,8 +4,8 @@
 
 // Variables
 $dark-color: black;
-$light-color: green;
-$bright-color: white;
+$light-color: white;
+$bright-color: orange;
 $global-padding: 10px;
 
 // Media Query Ranges
@@ -35,10 +35,12 @@ h1, h2, h3, h4{
 
 h1{
   padding: 20px;
+  font-size: 55px;
+  color: $dark-color;
 }
 
 h2{
-
+  @include block_font(2em, $light-color);
 }
 
 
