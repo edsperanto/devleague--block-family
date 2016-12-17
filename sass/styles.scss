@@ -3,28 +3,42 @@
 @import "./partials/clearfix";
 
 // Variables
-$dark-color: black;
-$light-color: white;
+$dark-color: #222;
+$light-color: #EEE;
 $bright-color: orange;
 $global-padding: 10px;
 
+// Mixins
+@mixin block_font($block_font_size, $block_font_color){
+  font-size: $block_font_size !important;
+  color: $block_font_color !important;
+}
+
 // Media Query Ranges
 @media screen and (min-width: 600px) {
-
+  body{
+    background-color: $bright-color !important;
+  }
+  h1 {
+    color: $light-color !important;
+    font-size: 43px !important;
+    padding: 15px !important;
+  }
+  h2 {
+    @include block_font(1.7em, $bright-color);
+  }
+  .block_family li{
+    background-color: $light-color !important;
+    padding: 14px !important;
+  }
 }
 @media screen and (min-width: 900px) {
 
 }
 
-// Mixins
-@mixin block_font($block_font_size: 25px, $block_font_color: $dark){
-  font-size: $block_font_size;
-  color: $block_font_color;
-}
-
 // Styles
 body{
-  background-color: orange;
+  background-color: $bright-color;
   text-align: center;
   color: #EEE;
 }
@@ -40,7 +54,8 @@ h1{
 }
 
 h2{
-  @include block_font(2em, $light-color);
+  font-size: 2em;
+  color: $light-color;
 }
 
 
